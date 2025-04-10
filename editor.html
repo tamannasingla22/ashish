@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ParvPost | Editor</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+  <script defer src="editor.js"></script>
+</head>
+<body class="bg-[#f9fafb] text-gray-800 font-sans min-h-screen flex items-center justify-center p-6">
+  <div class="max-w-4xl w-full bg-white rounded-xl shadow-lg p-8 grid grid-cols-1 md:grid-cols-2 gap-6">
+    <div>
+      <h1 class="text-2xl font-bold mb-4">🎨 Create Your Greeting</h1>
+      <input id="festival" type="text" placeholder="Festival Name" class="w-full px-4 py-2 mb-4 border rounded" />
+      <textarea id="message" placeholder="Your Message" class="w-full px-4 py-2 mb-4 border rounded" rows="5"></textarea>
+      <button id="generateBtn" class="w-full py-2 mb-3 bg-blue-600 text-white rounded hover:bg-blue-700">Generate Preview</button>
+      <button id="downloadBtn" class="w-full py-2 bg-green-600 text-white rounded hover:bg-green-700">Download Greeting</button>
+    </div>
+    <div id="preview" class="flex items-center justify-center border rounded-lg bg-gray-50 p-4 min-h-[250px]">
+      <div id="greetingCard" class="text-center">
+        <h2 class="text-xl font-semibold text-gray-600">Your greeting will appear here...</h2>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
